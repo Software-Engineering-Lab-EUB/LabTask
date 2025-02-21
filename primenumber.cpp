@@ -1,10 +1,37 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-//write a function to print prime numbers from 1 to 100 and call it in the main function
 
-int main() {
+void isPrime(int n);
 
-    //call the function here
-    return 0;
+int main()
+{
+    int n = 100;
+    for (int i = 1; i <= n; i++)
+    {
+        isPrime(i);
+    }
+}
+
+void isPrime(int n)
+{
+    if (n < 2 || (n != 2 && n % 2 == 0))
+    {
+        return;
+    }
+    if (n == 2 || n == 3)
+    {
+        cout << n << endl;
+    }
+    else
+    {
+        for (int i = 3; i <= floor(sqrt(n)); i += 2)
+        {
+            if (n % i == 0)
+            {
+                return;
+            }
+        }
+        cout << n << endl;
+    }
 }
