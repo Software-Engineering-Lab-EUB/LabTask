@@ -21,5 +21,6 @@ void printPrimeNumbers() {
 int main() {
 
     //call the function here
+    printPrimeNumbers();
     return 0;
 }
