@@ -6,5 +6,5 @@ using namespace std;
 int main() {
 
     //call the function here
-    return 0;
+    
 }
